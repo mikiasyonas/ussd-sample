@@ -1,0 +1,11 @@
+{
+  "name": "ussd-sample",
+  "version": "1.0.0",
+  "description": "ussd start code ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Mikias Yonas",
+  "license": "ISC"
+}
