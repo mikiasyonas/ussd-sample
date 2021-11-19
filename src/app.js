@@ -10,6 +10,12 @@ app.use(bodyParser.urlencoded({
 app.use(cors());
 app.options('*', cors());
 
+app.get('/', (req, res) => {
+    return res.status(200).json({
+        message: "works!"
+    });
+});
+
 app.post('/', ((req, res) => {
     const {
         sessionId,
@@ -36,7 +42,7 @@ app.post('/', ((req, res) => {
         response = `END just choose 1`;
     }
     res.set('Content-Type: text/plain');
-    return res.send(response);
+    return res.status(200).send(response);
 
 }));
 
